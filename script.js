@@ -2,7 +2,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link=>{link.addEventListener('
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 const profileCaption=document.querySelector('.art-caption');
-if(profileCaption){const label=profileCaption.querySelector('small');const name=profileCaption.querySelector('strong');if(label)label.textContent='GRAPHIC DESIGNER';if(name)name.textContent='Ashike Rasul Mahadi';}
+if(profileCaption){const label=profileCaption.querySelector('small');const name=profileCaption.querySelector('strong');if(label)label.textContent='ASHIKE RASUL MAHADI';if(name)name.textContent='GRAPHIC DESIGNER';}
 const artTag=document.querySelector('.art-tag');
 if(artTag)artTag.innerHTML='<strong>→ IDEA<br>→ DESIGN<br>→ IMPACT</strong>';
 const experienceCards=document.querySelectorAll('.experience-card');
